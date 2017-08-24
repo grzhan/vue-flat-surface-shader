@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-flat-surface-shader</title>
+  </head>
+  <body>
+    <div id="app">
+        <flat-surface-shader></flat-surface-shader>
+    </div>
+    <script src="/dist/vue.fss.js"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'flat-surface-shader': window['vue-flat-surface-shader'].FlatSurfaceShader
+            }
+        });
+    </script>
+  </body>
+</html>
