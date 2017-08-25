@@ -33,6 +33,10 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: require.resolve('flat-surface-shader-unofficial'),
+        loader: "exports-loader?FSS"
       }
     ]
   },

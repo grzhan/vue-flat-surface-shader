@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>vue-flat-surface-shader</title>
+    <style>
+      .shader {
+        width: 2000px;
+        height: 1000px;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
-        <flat-surface-shader></flat-surface-shader>
+        <flat-surface-shader class="shader" type="webgl">
+        </flat-surface-shader>
     </div>
     <script src="/dist/vue.fss.js"></script>
     <script src="https://vuejs.org/js/vue.js"></script>
