@@ -19,8 +19,6 @@
     "css-loader": "^0.25.0",
     "exports-loader": "^0.6.4",
     "file-loader": "^0.9.0",
-    "pug": "^2.0.0-rc.3",
-    "pug-loader": "^2.3.0",
     "vue": "^2.4.2",
     "vue-loader": "^12.1.0",
     "vue-template-compiler": "^2.3.3",

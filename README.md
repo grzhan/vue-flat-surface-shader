@@ -1,6 +1,6 @@
 # vue-flat-surface-shader
 
-> A Vue component for flat surface shader
+> A Vue component for [flat surface shader](https://github.com/wagerfield/flat-surface-shader)
 
 ## Build Setup
 
