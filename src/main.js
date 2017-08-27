@@ -1,7 +1,7 @@
 import FlatSurfaceShader from './FSS.vue'
 
 const install = (Vue) => {
-    Vue.Component("flat-surface-shader", FlatSurfaceShader)
+    Vue.component("flat-surface-shader", FlatSurfaceShader)
 }
 
 export default {
