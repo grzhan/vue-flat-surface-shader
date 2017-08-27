@@ -1,7 +1,7 @@
 {
   "name": "vue-flat-surface-shader",
   "description": "A Vue component for flat surface shader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/vue.fss.js",
   "author": "grzhan <envy518@gmail.com>",
   "scripts": {
