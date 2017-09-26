@@ -2,6 +2,14 @@
 
 > A Vue component for [flat surface shader](https://github.com/wagerfield/flat-surface-shader)
 
+![license badge](https://img.shields.io/github/license/mashape/apistatus.svg) ![npm badge](https://img.shields.io/npm/v/npm.svg)
+
+DEMO:  [Github Pages](https://grzhan.github.io/vue-flat-surface-shader/)
+
+![demo screenshot](https://ws3.sinaimg.cn/large/006tKfTcgy1fjxayo32okj31480q9tao.jpg)
+
+
+
 ## How to use
 
 ```bash
