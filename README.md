@@ -57,13 +57,17 @@ Vue.use(FlatSurfaceShader)
 
 ### Props
 
-**1. Type**
+#### 1.Type
 
 + The type of shader's renderer, avaliable values are `webgl`, `canvas`, `svg`.
 + Prop type: `String`
 + Default value: `webgl`
 
-**2. Light**
+#### 2. Light
+
+A **Light** is composed of a 3D position **Vector** and 2 **Color** objects defining its **ambient** & **diffuse** emissions. These color channels interact with the **Material** of a **Mesh** to calculate the color of a **Triangle**.
+
+For detailed explanation, see [http://wagerfield.github.io/flat-surf…](http://wagerfield.github.io/flat-surface-shader/) and [https://github.com/wagerfield/flat-surface-shader](https://github.com/wagerfield/flat-surface-shader)
 
 | Name        | Type    | Default   |
 | ----------- | ------- | --------- |
@@ -82,9 +86,17 @@ Vue.use(FlatSurfaceShader)
 | autopilot   | Boolean | false     |
 | draw        | Boolean | true      |
 
-For detailed explanation, see [http://wagerfield.github.io/flat-surf…](http://wagerfield.github.io/flat-surface-shader/)
+#### 3. Mesh
 
-**3. Mesh**
+A **Mesh** is constructed from a **Geometry** object and a **Material** object. All the **Triangles** within the **Geometry** are rendered using the properties of the **Material**:
+
++ **Geometry** is simply a collection of triangles – nothing more.
++ A **Material** is composed of 2 **Color** objects which define the **ambient** & **diffuse** properties of a *surface*.
++ A **Triangle** is constructed from **3 Vertices** which each define the **x, y** and **z** coordinates of a corner. 
+
+For detailed explanation, see [http://wagerfield.github.io/flat-surf…](http://wagerfield.github.io/flat-surface-shader/) and [https://github.com/wagerfield/flat-surface-shader](https://github.com/wagerfield/flat-surface-shader)
+
+
 
 | Name     | Type   | Default   |
 | -------- | ------ | --------- |
@@ -99,8 +111,6 @@ For detailed explanation, see [http://wagerfield.github.io/flat-surf…](http://
 | ambient  | String | '#555555' |
 | diffuse  | String | '#FFFFFF' |
 | speed    | Number | 0.002     |
-
-For detailed explanation, see [http://wagerfield.github.io/flat-surf…](http://wagerfield.github.io/flat-surface-shader/)
 
 ## Development Build Setup
 
@@ -117,3 +127,6 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+## License
+
+Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php).
