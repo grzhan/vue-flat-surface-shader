@@ -1,5 +1,6 @@
 <template>
   <div ref="shader">
+    <slot></slot>
   </div>
 </template>
 
@@ -32,12 +33,7 @@ export default {
   },
 
   mounted: function() {
-    console.log('[vue-flat-surface-shader] mounted!')
     this.initialize()
-  },
-
-  beforeUpdate: function() {
-    console.log('[vue-flat-surface-shader] updated!')
   },
 
   data: function() {
