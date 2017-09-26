@@ -3,17 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>vue-flat-surface-shader</title>
+    <link rel="stylesheet" href="https://fonts.cat.net/css?family=Teko:400,500">
     <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      #app {
+        position: relative;
+      }
       .shader {
-        width: 2000px;
-        height: 1000px;
+        width: 100%;
+        height: 100vh;
+      }
+      .mask {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgba(255, 255, 255,0.9)
+      }
+      .title {
+        font-size: 7em;
+        font-family: Teko, sans-serif;
+        text-shadow: 4px 4px rgba(0,0,0,0.2);
+      }
+      .subtitle {
+        font-family: Avenir,Helvetica,Arial,sans-serif;
+        font-size: 1.7em;
+        margin-bottom: 30px;
       }
     </style>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <div id="app">
         <flat-surface-shader class="shader" type="webgl" :light="{ambient: '#22bc9e', diffuse: '#2b7c6b'}">
         </flat-surface-shader>
+        <div class="mask">
+          <div class="title">
+            VUE-FLAT-SURFACE-SHADER
+          </div>
+          <div class="subtitle">
+            A Vue component for Flat Surface Shader
+          </div>
+          <div class="github">
+            <a class="github-button" href="https://github.com/grzhan/vue-flat-surface-shader" data-size="large" aria-label="Star grzhan/vue-flat-surface-shader on GitHub">Star</a>
+          </div>
+        </div>
     </div>
     <script src="/dist/vue.fss.js"></script>
     <script src="https://vuejs.org/js/vue.js"></script>

@@ -22,7 +22,10 @@ Vue.use(FlatSurfaceShader)
 ```vue
 <template>
   <div id="app">
-    <flat-surface-shader type="webgl" :light="{ambient: '#22bc9e', diffuse: '#2b7c6b'}">
+    <flat-surface-shader type="webgl" 
+                         :light="{ambient: '#22bc9e', diffuse: '#2b7c6b'}"
+                         width=2000
+                         height=1000>
     </flat-surface-shader>
   </div>
 </template>
@@ -33,10 +36,23 @@ Vue.use(FlatSurfaceShader)
 ```vue
 <template>
   <div id="app">
-    <flat-surface-shader type="canvas" :light="{ambient: '#22bc9e', diffuse: '#2b7c6b', draw: false}" :mesh="{segments: 4, slices: 4, width: 1.8, height: 1.8}">
+    <flat-surface-shader class="shader"
+                         type="canvas" 
+                         :light="{ambient: '#22bc9e', diffuse: '#2b7c6b', draw: false}" 
+                         :mesh="{segments: 4, slices: 4, width: 1.8, height: 1.8}">
     </flat-surface-shader>
   </div>
 </template>
+<style>
+  html, body {
+      margin: 0;
+      padding: 0;
+  }
+  .shader {
+      width: 100vw;
+      height: 100vh;
+  }
+</style>
 ```
 
 ### Props
